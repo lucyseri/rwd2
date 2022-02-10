@@ -1,0 +1,120 @@
+/* header */
+.header{
+  width: 100%;
+  background-color: #b4c6a6;
+
+  position: sticky;
+  top: 0;
+
+  box-shadow: 0 1px 1px #ccc;
+
+  z-index: 10;
+}
+.header .inner-header{
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+.header .inner-header .nav{
+  flex: 0 1 1200px;
+   
+  display: flex;
+  justify-content: space-between;
+}
+.header .inner-header .nav .left-menu{
+  
+  flex: 0 0 100px;
+   
+  display: flex;
+}
+.header .inner-header .nav .left-menu span.menu{
+  /* background-color: #b4c6a6; */
+  display: block;
+  width: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #000;
+  cursor: pointer;
+}
+.header .inner-header .nav .left-menu span.menu:hover{
+  background-color: #66806a;
+  color: #fff;
+}
+
+
+.header .inner-header .nav .left-menu span.menu:active+.gnb{
+  left: 0;
+}
+
+.header .inner-header .nav .left-menu .gnb{
+  position: fixed;
+  left: -100%;
+  /* left: 0; */
+  top: 0;
+  width: 50vw;
+  height: 100vh;
+  box-sizing: border-box;
+  padding: 30px;
+  background-color: #b4c6a6;
+  transition: all 0.2s;
+}
+.header .inner-header .nav .left-menu .gnb:hover{
+  left: 0;
+}
+.header .inner-header .nav .left-menu .gnb>ul{
+  display: flex;
+  flex-direction: column;
+  background-color: #b4c6a6;
+}
+.header .inner-header .nav .left-menu .gnb>ul>li{
+  line-height: 30px;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+.header .inner-header .nav .left-menu .gnb>ul>li:hover{
+  background-color: #66806a;
+  color: #fff;
+  cursor: pointer;
+}
+.header .inner-header .nav .left-menu .gnb>ul>li>a{
+  border-color: inherit;
+  color: inherit;
+}
+
+.header .inner-header .nav .left-menu .gnb>ul>li ul.sub{
+  display: none;
+}
+.header .inner-header .nav .left-menu .gnb>ul>li ul.sub>li{
+  background-color: inherit;
+  color: inherit;
+  padding: 5px 10px;
+  box-sizing: border-box;
+}
+.header .inner-header .nav .left-menu .gnb>ul>li ul.sub>li a{
+  background-color: inherit;
+  color: inherit;
+}
+.header .inner-header .nav .left-menu .gnb>ul>li:hover ul.sub{
+  display: block;
+  background-color: inherit;
+  color: inherit;
+}
+
+.header .inner-header .nav h1.logo{
+  flex: 0 0 150px;
+  height: auto;
+}
+.header .inner-header .nav h1.logo img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.header .inner-header .nav .right-menu{
+  flex: 0 0 100px;
+
+  line-height: 50px;
+  text-align: center;
+  color: #000;
+  cursor: pointer;
+}
